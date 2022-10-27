@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="FullStack 1st app" />
+  -->
+  <title>My first Fullstack app</title>
+</head>
+
+<body>
+  <div>
+    <form action="http://localhost:3000/api/" method="post" enctype="multipart/form-data">
+      <input type="text" name="name"/> name
+      <input type="file" name="image" />
+      <button type="submit">OK</button>
+    </form>
+  </div>
+  <div id="listOfPic">
+    <!-- <div><img src='http://localhost:3011/uploads/PP_img.jpg1666827325612.jpg' alt='imageAPI'/></div> -->
+  </div>
+</body>
+
+<script>
+  // const handleUpPicture = ()=>{
+  //   fetch('http://localhost:3011/api', {
+  //     method:'POST',
+  //     headers: {
+  //       'Accept':'application/json',
+  //       'Content-Type':'application/json',
+  //     },
+      
+  //   })
+  // }
+
+  // const showPic = async () =>{
+  //   let pictures = await fetch('http://localhost:3011/api').then(res=>res.json().then(res=>res.User));
+  //   console.log(pictures)
+  //   pictures = pictures.slice(24,pictures.length);
+
+  //   const picturesFiltered = [];
+  //   pictures.forEach(element => {
+  //     picturesFiltered.push(element.pp)
+  //   });
+  //   console.log(picturesFiltered)
+
+  //   const listOfPic = document.getElementById('listOfPic');
+  //   picturesFiltered.map(e=>listOfPic.innerHTML += `<img class="listChild" src='${e}' alt='imageAPI'/>`)
+  // }
+
+  // showPic();
+</script>
+
+</html>
