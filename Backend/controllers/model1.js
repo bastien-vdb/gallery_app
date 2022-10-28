@@ -32,7 +32,7 @@ const createOneModel1 = (req, res, next) => {
     pictureUp.save()
     .then(success=>{
         console.log(success);
-        res.status(201).json({message:'Object created', message:success});
+        res.status(201).json({message:'Object created'});
     })
     .catch(err=>{
         console.log(err.message);
